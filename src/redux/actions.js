@@ -1,21 +1,29 @@
-import {CREATE_POST, FETCH_POSTS, HIDE_ALERT, HIDE_LOADER, REQUEST_POSTS, SHOW_ALERT, SHOW_LOADER} from './types'
+import {
+  CREATE_POST,
+  FETCH_POSTS,
+  HIDE_ALERT,
+  HIDE_LOADER,
+  REQUEST_POSTS,
+  SHOW_ALERT,
+  SHOW_LOADER,
+} from './types'
 
 export function createPost(post) {
   return {
     type: CREATE_POST,
-    payload: post
+    payload: post,
   }
 }
 
 export function showLoader() {
   return {
-    type: SHOW_LOADER
+    type: SHOW_LOADER,
   }
 }
 
 export function hideLoader() {
   return {
-    type: HIDE_LOADER
+    type: HIDE_LOADER,
   }
 }
 
@@ -23,7 +31,7 @@ export function showAlert(text) {
   return dispatch => {
     dispatch({
       type: SHOW_ALERT,
-      payload: text
+      payload: text,
     })
 
     setTimeout(() => {
@@ -34,13 +42,13 @@ export function showAlert(text) {
 
 export function hideAlert() {
   return {
-    type: HIDE_ALERT
+    type: HIDE_ALERT,
   }
 }
 
 export function fetchPosts() {
   return {
-    type: REQUEST_POSTS
+    type: REQUEST_POSTS,
   }
   // return async dispatch => {
   //   try {

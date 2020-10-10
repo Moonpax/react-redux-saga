@@ -2,6 +2,8 @@ import {takeEvery, put, call} from 'redux-saga/effects'
 import {FETCH_POSTS, REQUEST_POSTS} from './types'
 import {hideLoader, showAlert, showLoader} from './actions'
 
+// * function* generator function
+
 export function* sagaWatcher() {
   yield takeEvery(REQUEST_POSTS, sagaWorker)
 }

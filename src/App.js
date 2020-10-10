@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import PostForm from './components/PostForm'
 import Posts from './components/Posts'
 import FetchedPosts from './components/FetchedPosts'
@@ -22,7 +22,7 @@ function App() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
